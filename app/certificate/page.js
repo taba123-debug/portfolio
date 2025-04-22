@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { FaDownload } from 'react-icons/fa';
 const achievements = [
  
     {
@@ -10,29 +11,39 @@ const achievements = [
     },
     {
       title: 'SQL Basics Certificate 2024',
-      image: '/images/sql_1.PNG',
+      image: '/images/sql_2.PNG',
       downloadLink: '/certificates/SQL Basics.pdf',
     },
     {
       title: 'SQL Completion Certificate 2025',
-      image: '/images/SQL_BASICS.PNG',
+      image: '/images/sql1.PNG',
       downloadLink: '/certificates/SQL Completion.pdf',
     },
     {
       title: 'GEN AI Certificate 2024',
-      image: '/images/GENAI.PNG',
+      image: '/images/GENAI_New.PNG',
       downloadLink: '/certificates/GEN AI.pdf',
     },
     {
       title: 'Python  Certificate 2025',
-      image: '/images/Python_1.PNG',
+      image: '/images/python_new.PNG',
       downloadLink: '/certificates/python completion.pdf',
     },
     {
       title: 'Workshop Certificate 2025',
       image: '/images/Image_decontral.PNG',
       downloadLink: '/certificates/Certicate_1.pdf',
-    }
+    },
+    {
+      title: 'Internship Completion 2024',
+      image: '/images/web masters.PNG',
+      downloadLink: '/certificates/Web Dev Masters.pdf',
+    },
+    {
+      title: 'Hackathon Completion 2024',
+      image: '/certificates/hackathon1.PNG',
+      downloadLink: '/certificates/hackathon completion.pdf',
+    }    
   ];
   
 function page() {
@@ -52,15 +63,16 @@ function page() {
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-50 object-cover rounded-lg mb-4"
+                className="w-full h-50 object-cover rounded-lg mb
+                -4"
               />
-              <h2 className="text-xl font-semibold mb-2 text-pink-500">{item.title}</h2>
+              <h2 className="text-xl font-semibold mt-5 mb-2 text-pink-500">{item.title}</h2>
               <a
                 href={item.downloadLink}
                 download
-                className="inline-block mt-2 text-white bg-pink-500 px-4 py-2 rounded-md hover:bg-pink-600 transition"
+                className="inline-block mt-5 text-white bg-pink-500 px-4 py-2 rounded-full w-15 h-15 hover:bg-pink-600 transition"
               >
-                Download Certificate
+              <FaDownload className="text-3xl mt-2 " />
               </a>
             </div>
           ))}

@@ -32,7 +32,7 @@ function About() {
            <p className="text-2xl">
              <FaBriefcase className="inline text-pink-500 mr-2 text-2xl" />
              I've worked as a <span className="text-pink-500 font-light">SWE at Headstarters</span> and 
-             a <span className="text-pink-500 font-light">Frontend Intern at Web Dev Masters</span>.
+             a <span className="text-pink-500 font-light">Intern at Web Dev Masters</span>.
            </p>
  
            <p className="text-2xl">

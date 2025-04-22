@@ -30,7 +30,7 @@ function Header() {
         
         <FaCertificate className="inline-block mr-2 mt-0 text-3xl" />
         Certifications</Link>
-        <Link href="#projects">
+        <Link href="/projects">
         <FaRegFileAlt className="inline-block mr-2 mt-0 text-3xl" />
         
         Projects</Link>
