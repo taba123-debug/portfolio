@@ -26,7 +26,7 @@ function Header() {
         <FaProjectDiagram className="inline-block mr-2 mt-0 text-3xl" />
         Experience
         </Link>
-        <Link href="#certifications">
+        <Link href="/certificate">
         
         <FaCertificate className="inline-block mr-2 mt-0 text-3xl" />
         Certifications</Link>
