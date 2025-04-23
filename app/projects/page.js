@@ -1,66 +1,102 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { FaGithub } from "react-icons/fa";
 const projects = [
   {
-    title: "AI Resume Builder",
-    description: "Create ATS-friendly resumes with AI suggestions.",
-    tech: ["Next.js", "Flask", "Tailwind", "OpenAI"],
+    title: "Job Junction",
+    description: "Connect with HR of your dream company for resume suggestions schedule for interview preps.Connect with peers for Hackathons ",
+    tech: ["Next.js", "Tailwind CSS", "React"],
     liveLink: "https://yourdomain.com/ai-resume",
     githubLink: "https://github.com/yourusername/ai-resume",
   },
+
+  {
+    title: "Mini Background Changer",
+    description: "A mini background changer using Reactjs and Tailwind CSS  while using the concept of useState and useEffect.",
+    tech: ["React js", "Tailwind CSS"],
+    liveLink: "https://yourdomain.com/ai-resume",
+    githubLink: "https://github.com/yourusername/ai-resume",
+  },
+  {
+    title: "Recipe Website Project ",
+    description: "A recipe website project using HTML5 , CSS and Javascript.User can filter the recipes by cuisine and type.",
+    tech: ["HTML5", "CSS" , "Javascript"],
+    liveLink: "https://yourdomain.com/ai-resume",
+    githubLink: "https://github.com/yourusername/ai-resume",
+  },
+  {
+    title: "Software Company Frontend",
+    description: "A Frontend for a software company showcasing their services and portfolio.Shwocasing frontend skills",
+    tech: ["HTML 5", "CSS", "vercel"],
+    liveLink: "https://yourdomain.com/ai-resume",
+    githubLink: "https://github.com/yourusername/ai-resume",
+  }
 ];
+
 
 function page() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0a0a0a] via-[#1a0f1f] to-[#2b1436] text-white">
       <Header />
-      <div className="grid md:grid-cols-2 gap-8 mt-10">
-        <div>
-          <h1 className="text-4xl font-bold text-center mt-20 mb-12">
-            MY RECENT
-            <span className="text-pink-500"> WORK </span>COMPLETION !
-          </h1>
-        </div>
+      <section>
 
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className=" p-6 rounded-2xl border border-pink-500 hover:shadow-pink-500/40 hover:shadow-2xl transition duration-300"
-          >
-            <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-            <p className="text-sm text-gray-300 mb-4">{project.description}</p>
-            <div className="flex flex-wrap gap-2 mb-4">
-              {project.tech.map((tech, i) => (
-                <span
-                  key={i}
-                  className="bg-pink-600 text-xs px-2 py-1 rounded-full"
+        <div
+        className="max-w-6xl mx-auto">
+        <h1 className="text-4xl font-bold text-center mt-22 mb-15">
+         MY RECENT <span className="text-pink-500">PROJECTS ! </span>
+        </h1>
+        <p className='text-gray-400 text-light text-2xl text-center mb-20'> 'Here's some detail about my recent work completion and the technologies I've used !'</p>
+
+        <div className="grid md:grid-cols-2 gap-8 mt-10">
+      
+
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className=" p-6 rounded-2xl border border-pink-500 hover:shadow-pink-500/40 hover:shadow-2xl transition duration-300 mb-10 cursor-pointer"
+            >
+              <h3 className="text-3xl font-bold mb-2">{project.title}</h3>
+              <p className=" text-gray-300 text-sm mb-4 mt-5">
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.tech.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="bg-pink-600 mt-7 px-2 py-1 rounded-full text-sm cursor-pointer hover:bg-pink-700 transition duration-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="flex gap-4">
+                {/* <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-pink-500 px-4 py-2 rounded-md hover:bg-pink-600"
                 >
-                  {tech}
-                </span>
-              ))}
+                  Live Demo
+                </a> */}
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" mt-7 border border-pink-500 px-4 py-2 rounded-md hover:bg-pink-500 text-2xl"
+                >
+                  <FaGithub className="inline mr-2 text-2xl" />
+                  Link
+                </a>
+              </div>
             </div>
-            <div className="flex gap-4">
-              <a
-                href={project.liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-pink-500 px-4 py-2 rounded-md hover:bg-pink-600"
-              >
-                Live Demo
-              </a>
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border border-pink-500 px-4 py-2 rounded-md hover:bg-pink-500"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-        ))}
-      </div>
+          ))}
+       
+        </div>
+        
+        </div>
+      </section>
+      
 
       <Footer />
     </div>
