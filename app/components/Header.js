@@ -22,10 +22,7 @@ function Header() {
         <FaUser className="inline-block mr-2 mt-0 text-3xl" />
         About Me
         </Link>
-        <Link href="#experience">
-        <FaProjectDiagram className="inline-block mr-2 mt-0 text-3xl" />
-        Experience
-        </Link>
+       
         <Link href="/certificate">
         
         <FaCertificate className="inline-block mr-2 mt-0 text-3xl" />

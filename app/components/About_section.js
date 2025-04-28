@@ -22,9 +22,9 @@ function About_Section() {
         </h1>
         <p className='text-gray-400 text-light text-2xl text-center mb-10'> 'Here's some details of my recent completion of hackthons !'</p>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 ">
           {achievements.map((item, index) => (
-            <div key={index} className=" p-6 rounded-xl shadow-lg border-2 border-pink-500">
+            <div key={index} className=" p-6 rounded-xl shadow-lg border-2 border-pink-500 transition-all duration-300 hover:scale-105 hover:shadow-pink-500/40 hover:shadow-2xl mb-10 cursor-pointer">
               <img
                 src={item.image}
                 alt={item.title}
