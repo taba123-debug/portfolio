@@ -10,7 +10,6 @@ import Image from "next/image";
 import Header from "../components/Header";
 import About_Section from "../components/About_section";
 import Footer from "../components/Footer";
-// import Tools from '../components/Tools';
 function About() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0a0a0a] via-[#1a0f1f] to-[#2b1436] text-white">
