@@ -5,7 +5,6 @@ import { SiDatacamp } from 'react-icons/si';
 function Footer() {
   return (
     <footer className="bg-gray-950 text-white py-5">
-     <h1 className='flex justify-left items-end text-pink-500 italic text-bold mt-10 text-4xl'>#She'sInTech</h1>
       <div className="text-center mb-4">
      
         <h1 className="text-2xl mt-0">
@@ -15,7 +14,7 @@ function Footer() {
       </div>
       <div className="flex justify-center space-x-6 text-3xl">
         <a
-          href="https://www.linkedin.com/in/your-linkedin"
+          href="https://www.linkedin.com/in/tabban-ghani"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-pink-500 transition"

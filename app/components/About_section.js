@@ -15,8 +15,8 @@ const achievements = [
 
 function About_Section() {
   return (
-    <section className=" text-white py-16 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section className=" text-white py-16 px-6 ">
+      <div className="max-w-6xl mx-auto ">
         <h1 className="text-4xl font-bold text-center mb-12">
           <span className="text-pink-500">HACKATHONS </span>COMPLETION
         </h1>

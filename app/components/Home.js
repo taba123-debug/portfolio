@@ -6,7 +6,7 @@ import '../style/animation.css';
 import { FaDownload, FaLinkedin } from "react-icons/fa";
 function Home() {
   return (
-    <div className=" text-white flex items-center justify-center px-4 mt-30">
+    <div className="pt-40 px-6 text-white flex items-center justify-center  ">
     <div className="max-w-4xl text-center">
     <div className="flex justify-center items-center">
   <Image
@@ -44,17 +44,17 @@ function Home() {
       onClick={() => window.open("/Resume/TabbanGhani Resume.pdf", "_blank")}
       className="flex items-center gap-2 bg-white text-black text-2xl font-bold px-5 py-2 rounded-full hover:bg-pink-500 hover:text-white transition duration-300"
     >
-      <FaDownload className="text-2xl" />
+      <FaDownload className="text-xl" />
       HIRE ME 
     </button>
 
       <button
-        href="https://www.linkedin.com/in/tabban-ghani-98a163272/"  
+        href="https://www.linkedin.com/in/tabban-ghani"  
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center gap-2 bg-white text-black font-bold text-2xl px-5 py-2 rounded-full hover:bg-pink-400 hover:text-white transition duration-300"
+        className="flex items-center gap-2 bg-white text-black font-bold text-xl px-5 py-2 rounded-full hover:bg-pink-400 hover:text-white transition duration-300"
       >
-        <FaLinkedin className="text-2x" />
+        <FaLinkedin className="text-xl" />
         CONNECT ME
       </button>
     </div>

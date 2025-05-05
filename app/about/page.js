@@ -12,7 +12,7 @@ import About_Section from "../components/About_section";
 import Footer from "../components/Footer";
 function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0a0a0a] via-[#1a0f1f] to-[#2b1436] text-white">
+    <div className="min-h-screen bg-gradient-to-b from-[#0a0a0a] via-[#1a0f1f] to-[#2b1436] text-white pt-30 ">
       <Header />
       <section className=" text-white py-16 px-6">
         <div className="max-w-6xl mx-auto text-3xl flex flex-col md:flex-row items-center justify-between space-y-10 md:space-y-0">

@@ -4,6 +4,13 @@ import Footer from "../components/Footer";
 import { FaGithub } from "react-icons/fa";
 const projects = [
   {
+    title: "Remote Job Hunt",
+    description: "A platform to find remote jobs and connect with recruiters. Users can filter jobs by category and location.",
+    tech: ["NextJs", "Tailwind CSS", "Strapi"],
+    liveLink: "https://yourdomain.com/remote-job-hunt",
+    githubLink: "",
+  },
+  {
     title: "Job Junction",
     description: "Connect with HR of your dream company for resume suggestions schedule for interview preps.Connect with peers for Hackathons ",
     tech: ["Next.js", "Tailwind CSS", "React"],
@@ -42,7 +49,7 @@ function page() {
       <section>
 
         <div
-        className="max-w-6xl mx-auto">
+        className="max-w-6xl mx-auto pt-40">
         <h1 className="text-4xl font-bold text-center mt-22 mb-15">
          MY RECENT <span className="text-pink-500">PROJECTS ! </span>
         </h1>
