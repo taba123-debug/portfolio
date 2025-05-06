@@ -44,6 +44,11 @@ const achievements = [
     image: '/certificates/hackathon1.PNG',
     downloadLink: '/certificates/hackathon completion.pdf',
   },
+  {
+    title: 'GDC BootCamp Compeletion 2025',
+    image: '/images/GDC.PNG',
+    downloadLink: '/certificates/bootcamp.pdf',
+  }
 ];
 
 function page() {
@@ -59,31 +64,35 @@ function page() {
             'Here's some details about my achievements !'
           </p>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {achievements.map((item, index) => (
-              <div
-                key={index}
-                className="p-6 rounded-xl shadow-lg border-2 border-pink-500 mt-10 transform transition-transform duration-500 hover:scale-105 hover:shadow-pink-600 hover:shadow-lg animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-52 object-cover rounded-lg mb-4 transition-opacity duration-500 hover:opacity-90"
-                />
-                <h2 className="text-xl font-semibold mt-5 mb-2 text-pink-500">
-                  {item.title}
-                </h2>
-                <a
-                  href={item.downloadLink}
-                  download
-                  className="inline-block mt-5 text-white bg-pink-500 px-4 py-2 rounded-full hover:bg-pink-600 transition"
-                >
-                  <FaDownload className="text-2xl" />
-                </a>
-              </div>
-            ))}
-          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
+  {achievements.map((item, index) => (
+    <div
+      key={index}
+      className="p-6 rounded-xl shadow-lg border-2 border-pink-500 mt-10 transform transition-transform duration-500 hover:scale-105 hover:shadow-pink-600 hover:shadow-lg animate-fade-in"
+      style={{ animationDelay: `${index * 0.1}s` }}
+    >
+      <div className="w-full h-52 overflow-hidden rounded-lg mb-4">
+        <img
+          src={item.image}
+          alt={item.title}
+          className="w-full h-full object-cover transition-opacity duration-500 hover:opacity-90"
+        />
+      </div>
+      <h2 className="text-xl font-semibold mt-5 mb-2 text-pink-500">
+        {item.title}
+      </h2>
+      <a
+        href={item.downloadLink}
+        download
+        className="inline-flex items-center gap-2 mt-5 text-white bg-pink-500 px-4 py-2 rounded-full hover:bg-pink-600 transition"
+      >
+        <FaDownload className="text-2xl" />
+        Download
+      </a>
+    </div>
+  ))}
+</div>
+
         </div>
       </section>
       <Footer />
