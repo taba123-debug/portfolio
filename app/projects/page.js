@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 const projects = [
   {
     title: "Remote Job Hunt",
-    description: "A platform to find remote jobs and connect with recruiters. Users can filter jobs by category and location.",
+    description: "A platform to find remote jobs and connect with recruiters. Users can find Business domain Job and can apply , admin has all the access to manage Dashboard.",
     tech: ["NextJs", "Tailwind CSS", "Strapi"],
     liveLink: "https://yourdomain.com/remote-job-hunt",
     githubLink: "",

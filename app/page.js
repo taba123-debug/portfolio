@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Home from './components/Home'
 import Home_Intro from './components/Home_Intro'
 import Footer from './components/Footer'
+import './globals.css';
 // import ContactForm from './components/Contact_form'
 function page() {
   return (
