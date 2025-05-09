@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
-import { SiDatacamp, SiKaggle } from 'react-icons/si';
+import { SiDatacamp, SiKaggle  } from 'react-icons/si';
 
 function Footer() {
   return (
@@ -50,6 +50,9 @@ function Footer() {
 
       <p className="text-center text-xs sm:text-sm text-gray-400 mt-4">
         © {new Date().getFullYear()} Tabban's Portfolio.
+      </p>
+      <p className="text-center text-xs sm:text-sm text-gray-400 mt-4">
+        email at:{'tabbanghani0@gmail.com '}
       </p>
     </footer>
   );
