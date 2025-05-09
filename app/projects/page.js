@@ -34,7 +34,7 @@ const projects = [
   // },
   {
     title: "Software Company Frontend",
-    description: "A Frontend for a software company showcasing their services and portfolio.Shwocasing frontend skills",
+    description: "A Frontend for a software company showcasing their services and portfolio.Show casing frontend skills",
     tech: ["HTML 5", "CSS", "vercel"],
     liveLink: "https://github.com/taba123-debug/Hackathon",
     // githubLink: "https://github.com/taba123-debug/Hackathon",
