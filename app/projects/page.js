@@ -7,37 +7,37 @@ const projects = [
     title: "Remote Job Hunt",
     description: "A platform to find remote jobs and connect with recruiters. Users can find Business domain Job and can apply , admin has all the access to manage Dashboard.",
     tech: ["NextJs", "Tailwind CSS", "Strapi"],
-    liveLink: "https://yourdomain.com/remote-job-hunt",
+    liveLink: "https://github.com/taba123-debug/JobHumt",
     githubLink: "",
   },
   {
     title: "Job Junction",
     description: "Connect with HR of your dream company for resume suggestions schedule for interview preps.Connect with peers for Hackathons ",
     tech: ["Next.js", "Tailwind CSS", "React"],
-    liveLink: "https://yourdomain.com/ai-resume",
-    githubLink: "https://github.com/yourusername/ai-resume",
+    liveLink: "https://github.com/taba123-debug/Job-Junction",
+    githubLink: "",
   },
 
   {
-    title: "Mini Background Changer",
-    description: "A mini background changer using Reactjs and Tailwind CSS  while using the concept of useState and useEffect.",
-    tech: ["React js", "Tailwind CSS"],
-    liveLink: "https://yourdomain.com/ai-resume",
+    title: "Basic Portfolio Website",
+    description: "A basic portfolio website to showcase my projects and skills.",
+    tech: ["HTML", "CSS" , "JavaScript" , "Vercel"],
+    liveLink: "https://porfolio-name.vercel.app/",
     githubLink: "https://github.com/yourusername/ai-resume",
   },
-  {
-    title: "Recipe Website Project ",
-    description: "A recipe website project using HTML5 , CSS and Javascript.User can filter the recipes by cuisine and type.",
-    tech: ["HTML5", "CSS" , "Javascript"],
-    liveLink: "https://yourdomain.com/ai-resume",
-    githubLink: "https://github.com/yourusername/ai-resume",
-  },
+  // {
+  //   title: "Recipe Website Project ",
+  //   description: "A recipe website project using HTML5 , CSS and Javascript.User can filter the recipes by cuisine and type.",
+  //   tech: ["HTML5", "CSS" , "Javascript"],
+  //   liveLink: "https://yourdomain.com/ai-resume",
+  //   githubLink: "https://github.com/yourusername/ai-resume",
+  // },
   {
     title: "Software Company Frontend",
     description: "A Frontend for a software company showcasing their services and portfolio.Shwocasing frontend skills",
     tech: ["HTML 5", "CSS", "vercel"],
-    liveLink: "https://yourdomain.com/ai-resume",
-    githubLink: "https://github.com/yourusername/ai-resume",
+    liveLink: "https://github.com/taba123-debug/Hackathon",
+    // githubLink: "https://github.com/taba123-debug/Hackathon",
   }
 ];
 
@@ -87,7 +87,7 @@ function page() {
                   Live Demo
                 </a> */}
                 <a
-                  href={project.githubLink}
+                  href={project.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className=" mt-7 border border-pink-500 px-4 py-2 rounded-md hover:bg-pink-500 text-2xl"

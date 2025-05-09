@@ -1,18 +1,19 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
-import { SiDatacamp } from 'react-icons/si';
+import { SiDatacamp, SiKaggle } from 'react-icons/si';
 
 function Footer() {
   return (
-    <footer className="bg-gray-950 text-white py-5">
+    <footer className="bg-gray-950 text-white py-5 px-4 sm:px-6 lg:px-12">
       <div className="text-center mb-4">
-     
-        <h1 className="text-2xl mt-0">
-            CONTACT
+        <h1 className="text-xl sm:text-2xl font-semibold mt-0">
+          CONTACT
           <span className="text-pink-500 italic font-bold"> TABBAN </span> ON
         </h1>
       </div>
-      <div className="flex justify-center space-x-6 text-3xl">
+
+      {/* Social Icons */}
+      <div className="flex flex-wrap justify-center gap-6 text-2xl sm:text-3xl">
         <a
           href="https://www.linkedin.com/in/tabban-ghani"
           target="_blank"
@@ -22,7 +23,7 @@ function Footer() {
           <FaLinkedin />
         </a>
         <a
-          href="https://github.com/your-github"
+          href="https://github.com/taba123-debug"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-pink-500 transition"
@@ -30,7 +31,7 @@ function Footer() {
           <FaGithub />
         </a>
         <a
-          href="https://www.datacamp.com/profile/your-datacamp"
+          href="https://www.datacamp.com/portfolio/tabbanghani0"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-pink-500 transition"
@@ -38,16 +39,17 @@ function Footer() {
           <SiDatacamp />
         </a>
         <a
-          href="https://www.instagram.com/your-instagram"
+          href="https://www.kaggle.com/tabaghani"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-pink-500 transition"
         >
-          <FaInstagram />
+          <SiKaggle className="text-3xl sm:text-4xl" />
         </a>
       </div>
-      <p className="text-center text-sm text-gray-400 mt-4">
-        © {new Date().getFullYear()}   Tabban's Portfolio.
+
+      <p className="text-center text-xs sm:text-sm text-gray-400 mt-4">
+        © {new Date().getFullYear()} Tabban's Portfolio.
       </p>
     </footer>
   );
